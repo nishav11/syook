@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background: #8d6ce7;
+    padding: 2em;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg, .bg2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.bg {
+    -webkit-clip-path: polygon(74% 76%, 100% 28%, 100% 100%, 0% 100%);
+    clip-path: polygon(74% 76%, 100% 28%, 100% 100%, 0% 100%);
+    z-index: -1;
+    background-color: #f3eded;
+}
+
+.bg2{
+    -webkit-clip-path: polygon(67% 73%, 100% 13%, 100% 100%, 0% 100%);
+    clip-path: polygon(67% 73%, 100% 13%, 100% 100%, 0% 100%);
+    z-index: -2;
+    background-color: #d9dcdf;
+}
+.container{
+    margin-right: 40%;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 10%;
+    color:#fff;
+    font-weight: bold;
+}
+
+strong {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    
+} 
+input, textarea, #save {
+    display:block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin-bottom:5px;
+    padding:10px;
+    background:none;
+    border-bottom: 1px solid #fff !important;
+    border:0;
+    color:#fff;
+}
+#desc {
+    font-size: 0.9em;
+}
+
+#chat-icon {
+    margin: 0;
+    padding: 0;
+    color: #d9dcdf;
+}
+
+#save {
+    background-color:#fff;
+    cursor:pointer;
+    color:#414a59;
+    font-weight:bold;
+    margin-bottom:50px;
+    padding:10px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+
+ul {
+    list-style-type:none;
+    width:100%;
+    margin:0;padding:0;
+}
+ul li {
+    background-color:#4e5663;
+    opacity: 0.9;
+    padding:20px;
+    margin-bottom:2px;
+    color:#bec8d9;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+ul li a {
+    color:#ffcc00;
+}
+/* h1 {
+    margin-top:50px;
+} */
+
+::-webkit-input-placeholder {
+    color: rgb(253, 251, 250);
+    font-size: 13px;
+  }
+  ::-moz-placeholder {
+    color: rgb(253, 251, 250);
+    font-size: 13px;
+  }
+  :-ms-input-placeholder {
+    color: rgb(253, 251, 250);
+    font-size: 13px;
+  }
+  ::placeholder {
+    color: rgb(253, 251, 250);
+    font-size: 13px;
+  }
+
+.edit-post, .del-post {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    float: right;
+    font-weight: bolder;
+}
+.del-post{
+    color: rgb(187, 59, 59);
+    font-size: 18px;
+}
+
+.edit-post {
+    color: rgb(54, 151, 231);
+    font-size: 18px;
+}
+
+.edit-post:hover, .del-post:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 786px){
+    .container{
+        margin: 0 auto;
+    }
+}
+
+
